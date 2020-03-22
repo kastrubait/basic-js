@@ -26,5 +26,3 @@ module.exports = function transform(/* arr */) {
     return res;
     } else throw new RangeError('Error');
 };
-
-};
