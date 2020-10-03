@@ -14,7 +14,7 @@ class VigenereCipheringMachine {
             if (position !== -1) {
                 const shift = this.alphabet.indexOf(key[count % key.length].toUpperCase());
                 count++;
-                result.push(this.alphabet[(position + shift) % this.alphabet.length])
+                result.push(this.alphabet[(position + shift) % this.alphabet.length]);
             } else {
                 result.push(message[i])
             }  
@@ -31,7 +31,7 @@ class VigenereCipheringMachine {
             if (position !== -1) {
                 const shift = this.alphabet.indexOf(key[count % key.length].toUpperCase());
                 count++;
-                result.push(this.alphabet.slice((position - shift), (position - shift + 1)))
+                result.push(this.alphabet[(position + this.alphabet.length - shift) % this.alphabet.length]);
             } else {
                 result.push(message[i])
             }  
