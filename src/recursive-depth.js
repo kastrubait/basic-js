@@ -1,3 +1,5 @@
+const CustomError = require("../extensions/custom-error");
+
 module.exports = class DepthCalculator {
   calculateDepth(array, level = 1, result = new Array()) {
       result.push(level);
