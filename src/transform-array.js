@@ -1,4 +1,6 @@
-module.exports = function transform(/* arr */) {
+const CustomError = require("../extensions/custom-error");
+
+module.exports = function transform(arr) {
    if (!(arr instanceof Array)) throw new Error();
     if (arr.length == 0) return arr;
     let length = arr.length;
